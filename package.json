@@ -1,0 +1,25 @@
+{
+  "name": "devcm-et-sql-23",
+  "version": "1.0.0",
+  "description": "challenge 12",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christian1512-FE/DevCM-ET-SQL-23.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christian1512-FE/DevCM-ET-SQL-23/issues"
+  },
+  "homepage": "https://github.com/christian1512-FE/DevCM-ET-SQL-23#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.1.0"
+  }
+}
