@@ -6,7 +6,7 @@ const mysql = require('mysql2');
 const dbConfig = {
     host: '127.0.0.1',
     user: 'root',
-    password: '8993CH_mm_2',
+    password: 'password',
     database: 'employeetracker_db'
 };
 
