@@ -235,8 +235,8 @@ const updateEmployeeRole = async () => {
 
         // Updated employees role 
     ]).then(({ role_id, emp_id }) => {
-        console.log(role_id)
-        console.log(emp_id)
+        // console.log(role_id)
+        // console.log(emp_id)
         let employeeObject = { role_id }
         db.promise().query('UPDATE employee SET ? WHERE id = ?', [employeeObject, emp_id])
             .then(([res]) => {
@@ -252,6 +252,7 @@ const updateEmployeeRole = async () => {
     })
 }
 
+//DELETE EMPLOYEE
 const deleteEmployee = async () => {
     const [employees] = await db.promise().query('SELECT * FROM employee')
     const employeeArray = employees.map(employee => (
@@ -259,8 +260,13 @@ const deleteEmployee = async () => {
             name: employee.first_name + " " + employee.last_name, value: employee.id
         }
     ))
-    inquire.prompt({ type: 'list', name: 'id', message: 'Select the employee to delete', choices: employeeArray }).then(answers =>{
-        db.promise().query('DELETE FROM employee WHERE id = ?', answers.id).then(([res])=>{
+    inquire.prompt({
+        type: 'list',
+        name: 'id',
+        message: 'Select the employee to delete',
+        choices: employeeArray
+    }).then(answers => {
+        db.promise().query('DELETE FROM employee WHERE id = ?', answers.id).then(([res]) => {
             if (res.affectedRows > 0) {
                 console.info(`Deleted employee`);
             }
