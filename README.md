@@ -20,7 +20,7 @@ Employee Tracker SQL Challenge 12
   Link to Demo  
   https://drive.google.com/file/d/1cVBoFqdFjZC9VfbiV6PEVR5HNvlm0S-g/view
 
-  ![Video Demo](./Images/Screenshot%202023-02-23%20at%201.56.19%20PM.png)
+  ![Video Demo](./Assets/Untitled_%20Feb%2023%2C%202023%201_53%20PM.gif)
 
   ## Technologies Used
   &bull; [Node.js](https://nodejs.org/en/) <br>
